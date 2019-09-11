@@ -16,7 +16,8 @@ public class ImperativeVsDeclarativeExample1 {
     /**
      * Declarative - what style of programming
      */
-    int sum1 = IntStream.rangeClosed(0, 100)
+    int sum1 = IntStream.rangeClosed(0, 100) // it splits the values and performs summation
+        .parallel()
         .sum();
     System.out.println("Sum using the declarative approach: " + sum1);
   }
