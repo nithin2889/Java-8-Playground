@@ -1,4 +1,4 @@
-package com.playground;
+package com.playground.imperativevsdeclarative;
 
 import java.util.ArrayList;
 import java.util.Arrays;
