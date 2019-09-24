@@ -8,5 +8,6 @@ public class LambdaVariableExample1 {
     Consumer<Integer> c1 = i1 -> {
       System.out.println("value is: " + i1);
     };
+    c1.accept(10);
   }
 }
