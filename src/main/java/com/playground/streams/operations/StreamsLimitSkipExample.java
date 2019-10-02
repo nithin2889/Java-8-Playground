@@ -1,4 +1,4 @@
-package com.playground.streams;
+package com.playground.streams.operations;
 
 import java.util.Arrays;
 import java.util.List;

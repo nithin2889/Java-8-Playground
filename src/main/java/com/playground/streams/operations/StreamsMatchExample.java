@@ -1,4 +1,4 @@
-package com.playground.streams;
+package com.playground.streams.operations;
 
 import com.playground.data.StudentDatabase;
 
