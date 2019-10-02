@@ -16,9 +16,11 @@ public class StreamsExample {
     // 1. Student and their list of activities in a Map.
     // 2. Want just the students who are in the grade level greater than or equal to 3.
     Map<String, List<String>> studentMap =
+        // 3. debugging stream operations using peek()
         StudentDatabase.getAllStudents().stream()
             .filter(studentGradeLevelPredicate) // Stream<Student>
             .filter(studentGpaPredicate) // Stream<Student>
+            .peek(System.out::println)
             .collect(
                 Collectors.toMap(
                     Student::getName, Student::getActivities)); // Map<String, List<String>>
