@@ -2,16 +2,20 @@ package com.playground.data;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class Student {
+
   private String name;
   private int gradeLevel;
   private double gpa;
   private String gender;
   private int noteBooks;
   private List<String> activities = new ArrayList<>();
+  private Optional<Bike> bike;
 
-  public Student() {}
+  public Student() {
+  }
 
   public Student(String s) {
     this.name = s;
@@ -86,6 +90,14 @@ public class Student {
 
   public void setActivities(List<String> activities) {
     this.activities = activities;
+  }
+
+  public Optional<Bike> getBike() {
+    return bike;
+  }
+
+  public void setBike(Optional<Bike> bike) {
+    this.bike = bike;
   }
 
   public void printListOfActivities() {
